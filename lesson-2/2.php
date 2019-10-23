@@ -10,11 +10,11 @@ function getMaxStr($string) {
         } else {
             $newStr = $string[$i];
         }
-    }
-    if (strlen($newStr) > strlen($maxStr)) {
-        $maxStr = $newStr;
+        if (strlen($newStr) > strlen($maxStr)) {
+            $maxStr = $newStr;
+        }
     }
     return strlen($maxStr);
 }
 
-echo getMaxStr('pwwkewwlerw');
+echo getMaxStr('abcdabcddrewlowl');
